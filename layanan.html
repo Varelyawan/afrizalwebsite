@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Kami - MyWebsite</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      background: url('e4ff9ad244fe020a57f17642b299e894.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 1;
+    }
+
+    .hero h2,
+    .hero p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h2 a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .hero h2 a:hover {
+      color: #ffdd57;
+    }
+
+    /* SERVICES SECTION */
+    .services {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .services h3 a {
+      color: #007bff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .services h3 a:hover {
+      color: #0056c7;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .service-grid a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    /* CTA */
+    .cta {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .cta button {
+      background: #ffdd57;
+      color: #333;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background: #ffe680;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>MyWebsite</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="layanan.html">Layanan</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2><a href="layanankami.html">Layanan Kami</a></h2>
+  <p>Kami menyediakan berbagai layanan terkait kuliner tradisional untuk Anda.</p>
+</section>
+
+<section class="services">
+  <h3><a hre="layanankami.html">Apa yang Kami Tawarkan</a></h3>
+
+  <div class="service-grid">
+
+    <a href="layanankami.html">
+      <div class="service-card">
+        <h4>Pemesanan Makanan Tradisional</h4>
+        <p>Hidangan khas daerah dengan resep autentik.</p>
+      </div>
+    </a>
+
+    <a href="catering.html">
+      <div class="service-card">
+        <h4>Paket Catering Tradisional</h4>
+        <p>Paket acara dengan cita rasa Nusantara.</p>
+      </div>
+    </a>
+
+    <a href="oleh-oleh.html">
+      <div class="service-card">
+        <h4>Produk Oleh-Oleh Tradisional</h4>
+        <p>Makanan kering, camilan, dan oleh-oleh khas daerah.</p>
+      </div>
+    </a>
+
+    <a href="kelas-masak.html">
+      <div class="service-card">
+        <h4>Kelas Memasak Tradisional</h4>
+        <p>Belajar membuat masakan khas Indonesia.</p>
+      </div>
+    </a>
+
+    <a href="informasi-makanan.html">
+      <div class="service-card">
+        <h4>Informasi Sejarah Makanan</h4>
+        <p>Kisah budaya di balik hidangan Nusantara.</p>
+      </div>
+    </a>
+
+    <a href="rekomendasi.html">
+      <div class="service-card">
+        <h4>Rekomendasi Kuliner</h4>
+        <p>Daftar makanan khas dari berbagai daerah.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h3>Tertarik Mencoba Atau Memesan?</h3>
+  <p>Hubungi kami sekarang dan temukan hidangan favorit Anda!</p>
+  <button>Hubungi Kami</button>
+</section>
+
+<footer>
+  <p>© 2025 MyWebsite. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>

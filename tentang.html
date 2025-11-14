@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - MyWebsite</title>
+  <style>
+    /* Reset dan dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigasi */
+    header {
+      background: #007bff;
+      color: white;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    /* Hero section dengan background foto */
+    .hero {
+      position: relative;
+      background: url('e4ff9ad244fe020a57f17642b299e894.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45); /* overlay gelap */
+      z-index: 1;
+    }
+
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Konten utama */
+    .about-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .about-section h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #007bff;
+      text-align: center;
+    }
+
+    .about-section p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .member {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .member h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #007bff;
+    }
+
+    .member p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MyWebsite</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah komunitas pecinta kuliner Nusantara yang berkomitmen untuk melestarikan dan memperkenalkan makanan tradisional kepada semua orang. Melalui platform ini, kami ingin menghadirkan berbagai hidangan autentik yang dibuat dengan resep turun-temurun dan bahan berkualitas.</p>
+  </section>
+
+  <section class="about-section">
+    <h3>Visi dan Misi</h3>
+    <p><strong>Visi kami</strong> adalah menjadi pusat referensi dan penyedia makanan tradisional terpercaya, yang mampu mengenalkan kekayaan rasa Nusantara kepada generasi sekarang maupun yang akan datang.</p>
+    <p><strong>Misi kami</strong> meliputi pelestarian kuliner daerah, penyajian hidangan berkualitas tinggi, dan memberikan pengalaman kuliner yang hangat serta penuh keaslian kepada setiap pengunjung.</p>
+
+    <h3>Tim Kami</h3>
+    <div class="team">
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="CEO">
+        <h4>Rafael Sukma</h4>
+        <p>CEO & Founder</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="Desainer">
+        <h4>Siti Rahma</h4>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="Developer">
+        <h4>Rizky Hidayat</h4>
+        <p>Web Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MyWebsite. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
